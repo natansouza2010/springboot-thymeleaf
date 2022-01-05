@@ -18,5 +18,10 @@ public class AuthorService {
         return Streamable.of(all).toList();
     }
 
+    public boolean save(Author author){
+        authorRepository.save(author);
+        return true;
+    }
+
 
 }
